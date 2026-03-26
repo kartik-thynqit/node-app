@@ -27,6 +27,16 @@ app.post('/add-user', (req, res) => {
   });
 });
 
+// app.put('/update-user/:id',(req,res)=>{
+//   const {id}=req.params;
+//   const {name,email}=req.body;
+//   const query1='Select * from users where id=?';
+//   db.query(query1,[id],(err,result)=>{
+//     if(err) return res.status(500).json({error:err.message});
+//     res.json(result)
+//   })
+// })
+
 
 app.get('/users', (req, res) => {
   const query = 'SELECT * FROM users';
