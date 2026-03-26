@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: Node App Environment
 
     steps:
       - name: Checkout code
